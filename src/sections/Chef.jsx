@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import fotoChef from "../assets/chef-mageroski.jpg";
 
 export default function Chef() {
   return (
     <section
       style={{
         backgroundColor: "#0A0A0A",
-        // Mudamos a opacidade de 0.15 para 0.45 para as bolas ficarem bem mais brancas e visíveis
+        // Padrão de BOLAS brancas com opacidade 0.50 para visibilidade total
         backgroundImage:
           "radial-gradient(rgba(255, 255, 255, 0.50) 8px, transparent 8px)",
         backgroundSize: "48px 48px",
@@ -13,7 +14,7 @@ export default function Chef() {
       className="py-32 px-6 md:px-16 lg:px-24 relative overflow-hidden w-full border-t border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
-        {/* LADO ESQUERDO: Foto Destacada e Imponente (Ocupa 5 colunas) */}
+        {/* LADO ESQUERDO: Foto Destacada com Cantos Suaves */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98, x: -30 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -21,14 +22,13 @@ export default function Chef() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="lg:col-span-5 relative"
         >
-          {/* Moldura com borda fina branca/dourada para destacar no fundo preto */}
-          <div className="relative aspect-[3/4] w-full bg-[#1A1A1A] border border-white/10 overflow-hidden shadow-2xl">
+          {/* Adicionado rounded-2xl para harmonizar com o restante do novo design */}
+          <div className="relative aspect-[3/4] w-full bg-[#1A1A1A] border border-white/10 overflow-hidden shadow-2xl rounded-2xl">
             <img
-              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1000"
+              src={fotoChef}
               alt="Chef Mageroski"
               className="w-full h-full object-cover filter contrast-[1.05] brightness-95"
             />
-            {/* Gradiente sutil para misturar a foto com o fundo preto da seção */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/40 via-transparent to-transparent" />
           </div>
 
@@ -36,7 +36,7 @@ export default function Chef() {
           <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r border-b border-[#C5A059]/40 pointer-events-none" />
         </motion.div>
 
-        {/* LADO DIREITO: Tipografia de Alto Contraste (Ocupa 7 colunas) */}
+        {/* LADO DIREITO: Tipografia de Alto Contraste */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +70,6 @@ export default function Chef() {
             </span>
           </h2>
 
-          {/* Frase em destaque */}
           <p
             style={{ color: "#FBF9F6" }}
             className="text-lg md:text-xl font-serif italic font-normal leading-relaxed opacity-90 border-l border-[#C5A059] pl-4"
@@ -79,7 +78,6 @@ export default function Chef() {
             absoluto ao tempo e à raiz de cada ingrediente."
           </p>
 
-          {/* Texto limpo em branco com alta opacidade para leitura perfeita */}
           <div
             style={{ color: "#FBF9F6" }}
             className="font-sans font-light text-base md:text-lg leading-relaxed tracking-wide opacity-70 space-y-4"
