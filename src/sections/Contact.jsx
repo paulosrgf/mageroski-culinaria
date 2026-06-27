@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   const whatsappUrl =
-    "https://wa.me/5542999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20evento.";
+    "https://wa.me/5541998458146?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20evento.";
 
   return (
     <section className="py-32 px-6 md:px-12 bg-vinho text-creme relative overflow-hidden border-t border-dourado/10">
@@ -73,7 +73,7 @@ export default function Contact() {
 
             {/* Instagram de Borda Fina */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/donagatonaa/"
               target="_blank"
               rel="noopener noreferrer"
               className="group border border-creme/30 hover:border-dourado hover:text-dourado text-creme font-medium tracking-widest text-xs uppercase py-5 px-8 rounded-lg flex items-center justify-between transition-all duration-300 w-full backdrop-blur-sm"

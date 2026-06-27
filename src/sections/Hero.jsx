@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   const whatsappUrl =
-    "https://wa.me/5542999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20evento.";
+    "https://wa.me/5541998458146?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20evento.";
 
   return (
     <section className="relative h-screen flex flex-col items-center justify-between overflow-hidden px-6 text-center py-12">
